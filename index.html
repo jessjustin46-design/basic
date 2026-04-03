@@ -213,7 +213,7 @@ button:active {
 </script>
 
 <script type="text/babel">
-const { useState, useEffect, useRef, useCallback } = React;
+const { useState, useEffect, useRef, useCallback, useId } = React;
 
 // ─── COLORS ─────────────────────────────────────────────────────────────────
 const C = {
@@ -758,7 +758,7 @@ function loadState() {
 }
 
 // ─── SVG LOGO ────────────────────────────────────────────────────────────────
-import { useId } from "react";
+
 
 function JJLogo({ size = 40 }) {
   // Génère des IDs uniques par instance → évite les conflits de dégradés
